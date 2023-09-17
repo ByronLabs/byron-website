@@ -37,6 +37,7 @@ const Brands = () => {
           <div className="w-full px-4">
             <SectionTitle
               title="Our Alliances"
+              paragraph=""
               center
             />
             <div

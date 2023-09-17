@@ -12,6 +12,7 @@ const Services = () => {
         <div className="container">
           <SectionTitle
             title="Our Services"
+            paragraph=""
             center
           />
 
