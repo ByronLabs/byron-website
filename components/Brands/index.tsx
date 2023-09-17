@@ -20,6 +20,12 @@ const brandsData: Brand[] = [
     name: "Elastic",
     href: "https://www.elastic.co/",
     image: "/images/brands/elastic.svg",
+  },
+  {
+    id: 4,
+    name: "Maltego",
+    href: "https://www.maltego.com/",
+    image: "/images/brands/Maltego-Logo-Horizontal-Yellow.svg",
   }
 ];
 
