@@ -21,7 +21,7 @@ const Footer = () => {
                     height={20}
                   />
                   <Image
-                    src="images/logo/LOG_WH.svg"
+                    src="images/logo/LOGO_WH.svg"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}

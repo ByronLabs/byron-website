@@ -18,7 +18,7 @@ const Hero = () => {
                   Cybersecurity is a journey.<br />Let us be your guide!
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                Byron Labs is a cybersecurity research startup firm founded in 2022. <br />Trust Byron Labs for ultimate cybersecurity.
+                Byron Labs is a cybersecurity research startup firm. <br />Trust Byron Labs for ultimate cybersecurity.
                 </p>
               </div>
             </div>

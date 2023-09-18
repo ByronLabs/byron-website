@@ -10,8 +10,45 @@ const menuData: Menu[] = [
   {
     id: 2,
     title: "Services",
-    path: "/services",
     newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Detect and Respond",
+        path: "/detect-and-respond",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Penetration Testing",
+        path: "/pentesting",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Cloud Security",
+        path: "/cloud-security",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Application Security",
+        path: "/application-security",
+        newTab: false,
+      },
+      {
+        id: 45,
+        title: "Governance, Risk & Compliance",
+        path: "/grc",
+        newTab: false,
+      },
+      {
+        id: 46,
+        title: "Specialized Training",
+        path: "/training",
+        newTab: false,
+      }
+    ],
   },
   {
     id: 3,

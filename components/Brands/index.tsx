@@ -1,6 +1,7 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import Link from "next/link";
 
 const brandsData: Brand[] = [
   {
@@ -11,15 +12,15 @@ const brandsData: Brand[] = [
   },
   {
     id: 2,
-    name: "WithSecure",
-    href: "https://www.withsecure.com/",
-    image: "/images/brands/withsecure_logo_charcoal_black.svg",
-  },
-  {
-    id: 3,
     name: "Elastic",
     href: "https://www.elastic.co/",
     image: "/images/brands/elastic.svg",
+  },
+  {
+    id: 3,
+    name: "WithSecure",
+    href: "https://www.withsecure.com/",
+    image: "/images/brands/withsecure_logo_charcoal_black.svg",
   },
   {
     id: 4,
@@ -41,14 +42,16 @@ const Brands = () => {
               center
             />
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-primary/[.06] py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
+              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-primary/[.06] py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[80px]"
               data-wow-delay=".1s
               "
             >
               {brandsData.map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
               ))}
+              
             </div>
+            
           </div>
         </div>
       </div>
