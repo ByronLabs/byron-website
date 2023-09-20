@@ -15,7 +15,7 @@ const featuresData: Feature[] = [
     ),
     title: "Detect & Respond",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Stay ahead of adversaries with our Detect & Respond Services. Our expert team is dedicated to swiftly identifying and mitigating security threats, ensuring your organization's resilience in the face of cyberattacks.",
   },
   {
     id: 1,
@@ -31,7 +31,7 @@ const featuresData: Feature[] = [
     ),
     title: "Offensive Security",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Test your cybersecurity defenses with our Offensive Security Services. Our expert team will help you proactively identify vulnerabilities, simulate real-world attacks, and fortify your organization against evolving threats.",
   },
   {
     id: 1,
@@ -47,7 +47,7 @@ const featuresData: Feature[] = [
     ),
     title: "Cloud Security",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Secure your cloud infrastructure with confidence. Explore our Cloud Security Services, delivered by experts in the field, to safeguard your data and applications in the cloud.",
   },
   {
     id: 1,
@@ -62,7 +62,7 @@ const featuresData: Feature[] = [
     ),
     title: "Application Security",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Navigate the complexities of application security with confidence. Explore our Application Security Services, led by experts in the field, to receive tailored guidance and recommendations for securing your critical applications",
   },
   {
     id: 1,
@@ -81,7 +81,7 @@ const featuresData: Feature[] = [
     ),
     title: "Governance, Risk & Compliance",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Unlock the power of Governance, Risk, and Compliance (GRC) with our expert services. Our GRC solutions empower your organization to navigate regulatory complexities, manage risks effectively, and maintain compliance with confidence.",
   },
   {
     id: 1,
@@ -97,7 +97,7 @@ const featuresData: Feature[] = [
     ),
     title: "Specialized Training",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Elevate your team's cybersecurity knowledge and skills with our Specialized Security Training. Our expert-led courses are tailored to address today's most advanced threats, ensuring your organization is equipped to defend against evolving cyber risks.",
   },
 ];
 export default featuresData;
