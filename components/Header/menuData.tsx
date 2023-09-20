@@ -20,7 +20,7 @@ const menuData: Menu[] = [
       },
       {
         id: 42,
-        title: "Penetration Testing",
+        title: "Offensive Security",
         path: "/pentesting",
         newTab: false,
       },
