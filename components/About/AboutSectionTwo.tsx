@@ -26,7 +26,7 @@ const AboutSectionTwo = () => {
                   Born in research and university excellence
                 </h3>
                 <p className="text-base text-justified font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Byron Labs was founded by former researchers from the Universidad de Alcalá. Born in a research environment has allow the componay 
+                  Byron Labs was founded by former researchers from the Universidad de Alcalá. Born in a research environment has allow the company 
                   to benefit from access to cutting-edge research, emerging technologies, and a pool of skilled researchers. 
                 </p>
               </div>

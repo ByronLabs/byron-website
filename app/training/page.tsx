@@ -25,7 +25,7 @@ const ServicesPage = () => {
                     <span className="mr-2 text-red-500 font-bold text-lg">-</span> Is your workforce equipped with the latest cybersecurity skills?
                   </p>
                   <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
-                    <span className="mr-2 text-red-500 font-bold text-lg">-</span> "Struggling to address specific security challenges or technologies?
+                    <span className="mr-2 text-red-500 font-bold text-lg">-</span> Struggling to address specific security challenges or technologies?
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
                     </h3>
                   </div>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Master the art of secure software development with our Secure Development Training courses. Gain the skills to build robust, resilient applications that stand strong against today's cyber threats
+                  Master the art of secure software development with our Secure Development Training courses. Gain the skills to build robust, resilient applications that stand strong against today&apos;s cyber threats
                   </p>
                 </div>
                 <div className="mb-9">

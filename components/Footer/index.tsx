@@ -76,22 +76,22 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/privacy-policy"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Privacy Policy{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Legal disclaimer{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -104,22 +104,22 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/contact"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Contact{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/about"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

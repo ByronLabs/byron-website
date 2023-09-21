@@ -35,7 +35,7 @@ const ContactPage = () => {
             For what purpose do we process your personal data?
           </h2>
           <p className="mb-3 text-base font-medium text-body-color text-justify">
-            We collect personal information necessary to respond to users' requests for information.
+            We collect personal information necessary to respond to users&apos; requests for information.
           </p>
           <h2 className="mb-3 text-xl font-bold text-black dark:text-white sm:text-xl lg:text-xl xl:text-xl">
             In what cases are personal data requested?
