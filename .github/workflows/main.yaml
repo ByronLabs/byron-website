@@ -15,6 +15,7 @@ jobs:
     
     - name: Run npm build
       run: |
+        npm ci
         npm run build
 
     - name: cd out
