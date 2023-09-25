@@ -22,7 +22,7 @@ jobs:
         cd out
       
     - name: Sync S3 with repository
-    - uses: jakejarvis/s3-sync-action@master
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
       env:
