@@ -125,7 +125,7 @@ const ContactPage = () => {
             <li>Using any device, software, virus, malware, or routine to interfere or attempt
               to interfere with the proper working of the site.</li>
             <li>
-              The use of "phishing", or impersonation of another person acting on your behalf.
+              The use of &quot;phishing&quot;, or impersonation of another person acting on your behalf.
             </li>
             <li>The use of the website to advertise through the presence of links, on-line
               marketing or any other means that could involve the use of fraudulent
@@ -149,7 +149,7 @@ const ContactPage = () => {
           <p className="mb-12 text-base font-medium text-body-color text-justify">
             These conditions of use of the Portal are indefinite. However, Byron Labs reserves the right to
             unilaterally modify these conditions whenever it deems appropriate. Any modification shall
-            enter into force at the time it is published on the Portal's home page.
+            enter into force at the time it is published on the Portal&apos;s home page.
           </p>
         </div>
       </section>
