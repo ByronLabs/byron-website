@@ -1,20 +1,33 @@
 "use client";
 
 import { useState } from 'react';
+import { Box, Checkbox, Link } from '@chakra-ui/react'
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [termsChecked, setTermsChecked] = useState(false);
+  const [dataCollectionChecked, setDataCollectionChecked] = useState(false);
+
+  const handleTermsChange = () => {
+    setTermsChecked(!termsChecked);
+  };
+
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    formData.append('access_key', '8077343c-c30f-4140-ba32-1ef217c4964e')
+    formData.append('access_key', '8077343c-c30f-4140-ba32-1ef217c4964e') 
 
     const object = Object.fromEntries(formData)
     const json = JSON.stringify(object)
+
+    if (!termsChecked) {
+      alert('You must accept the terms and the collection of personal data to proceed.');
+      return;
+    }
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -29,6 +42,9 @@ const Contact = () => {
       console.log(result)
       setSubmitted(true);
     }
+
+    
+
   };
 
   if (submitted) {
@@ -65,6 +81,7 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
+                        name="Name"
                         type="text"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -83,6 +100,7 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
+                        name="Email"
                         type="email"
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -101,7 +119,7 @@ const Contact = () => {
                         Your Message
                       </label>
                       <textarea
-                        name="message"
+                        name="Message"
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -111,6 +129,18 @@ const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
+                  <label style={{marginBottom: '20px', marginLeft: '20px'}}>
+                    <input
+                      type="checkbox"
+                      checked={termsChecked}
+                      onChange={handleTermsChange}
+                      required
+                    />
+                    <span style={{ marginLeft: '10px'}} className='ml-2 text-md text-dark dark:text-white'>
+                      I agree to the <a href="https://byronlabs.io/privacy-policy.html"> <em><strong> terms and conditions and collection of personal data</strong></em></a>.
+                    </span>
+                  </label>
+                  
                   <div className="w-full px-4">
                     <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Send
