@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    formData.append('access_key', '8077343c-c30f-4140-ba32-1ef217c4964e')
+    formData.append('access_key', '8077343c-c30f-4140-ba32-1ef217c4964e') 
 
     const object = Object.fromEntries(formData)
     const json = JSON.stringify(object)
@@ -137,7 +137,7 @@ const Contact = () => {
                       required
                     />
                     <span style={{ marginLeft: '10px'}} className='ml-2 text-md text-dark dark:text-white'>
-                      I agree to the <a href="https://byronlabs.io/privacy-policy.html" target="_blank"> <em><strong> terms and conditions and collection of personal data</strong></em></a>.
+                      I agree to the <a href="https://byronlabs.io/privacy-policy.html"> <em><strong> terms and conditions and collection of personal data</strong></em></a>.
                     </span>
                   </label>
                   
