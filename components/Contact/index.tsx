@@ -1,12 +1,20 @@
 "use client";
 
 import { useState } from 'react';
+import { Box, Checkbox, Link } from '@chakra-ui/react'
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [termsChecked, setTermsChecked] = useState(false);
+  const [dataCollectionChecked, setDataCollectionChecked] = useState(false);
+
+  const handleTermsChange = () => {
+    setTermsChecked(!termsChecked);
+  };
+
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -15,6 +23,11 @@ const Contact = () => {
 
     const object = Object.fromEntries(formData)
     const json = JSON.stringify(object)
+
+    if (!termsChecked) {
+      alert('You must accept the terms and the collection of personal data to proceed.');
+      return;
+    }
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -29,6 +42,9 @@ const Contact = () => {
       console.log(result)
       setSubmitted(true);
     }
+
+    
+
   };
 
   if (submitted) {
@@ -113,6 +129,18 @@ const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
+                  <label style={{marginBottom: '20px', marginLeft: '20px'}}>
+                    <input
+                      type="checkbox"
+                      checked={termsChecked}
+                      onChange={handleTermsChange}
+                      required
+                    />
+                    <span style={{ marginLeft: '10px'}} className='ml-2 text-md text-dark dark:text-white'>
+                      I agree to the <a href="https://byronlabs.io/privacy-policy.html" target="_blank"> <em><strong> terms and conditions and collection of personal data</strong></em></a>.
+                    </span>
+                  </label>
+                  
                   <div className="w-full px-4">
                     <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Send
