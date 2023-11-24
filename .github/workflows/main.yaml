@@ -20,9 +20,10 @@ jobs:
 
     - name: Prepare root directory
       run : |
-        mv --force public/.well-known out/
+        mv public/.well-known ..
         mv out/ ..
         ls -A1 | xargs rm -rf
+        mv ../.well-known .
         mv ../out/* .
           
     - name: Sync S3 with repository
