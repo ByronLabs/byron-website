@@ -18,9 +18,9 @@ const brandsData: Brand[] = [
   },
   {
     id: 3,
-    name: "WithSecure",
-    href: "https://www.withsecure.com/",
-    image: "/images/brands/withsecure_logo_charcoal_black.svg",
+    name: "CrowdStrike",
+    href: "https://www.crowdstrike.com/",
+    image: "/images/brands/crowdstrike-1.svg",
   },
   {
     id: 4,
