@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Box, Checkbox, Link } from '@chakra-ui/react'
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -129,14 +128,14 @@ const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
-                  <label style={{marginBottom: '20px', marginLeft: '20px'}}>
+                  <label className="mb-[20px] ml-[20px]">
                     <input
                       type="checkbox"
                       checked={termsChecked}
                       onChange={handleTermsChange}
                       required
                     />
-                    <span style={{ marginLeft: '10px'}} className='ml-2 text-md text-dark dark:text-white'>
+                    <span className='ml-2.5 text-md text-dark dark:text-white'>
                       I agree to the <a href="https://byronlabs.io/privacy-policy.html"> <em><strong> terms and conditions and collection of personal data</strong></em></a>.
                     </span>
                   </label>
