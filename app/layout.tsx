@@ -4,6 +4,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
+const inter = Inter({subsets: ["latin"], display: "swap"});
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Byron Labs",
@@ -87,7 +89,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="dark:bg-black">
+      <body className={`${inter.className} dark:bg-black`}>
         <Providers>
           <Header />
           {children}
@@ -100,4 +102,6 @@ export default function RootLayout({
 }
 
 import { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { Providers } from "./providers";
+
