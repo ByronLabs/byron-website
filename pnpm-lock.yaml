@@ -11,9 +11,6 @@ importers:
       '@chakra-ui/react':
         specifier: ^2.8.1
         version: 2.8.2(@emotion/react@11.11.4(@types/react@18.0.34)(react@18.2.0))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.0.34)(react@18.2.0))(@types/react@18.0.34)(react@18.2.0))(@types/react@18.0.34)(framer-motion@11.2.4(@emotion/is-prop-valid@1.2.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@next/font':
-        specifier: 13.1.6
-        version: 13.1.6
       next:
         specifier: ^13.5.3-canary.0
         version: 13.5.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0)
@@ -783,9 +780,6 @@ packages:
 
   '@next/eslint-plugin-next@13.1.6':
     resolution: {integrity: sha512-o7cauUYsXjzSJkay8wKjpKJf2uLzlggCsGUkPu3lP09Pv97jYlekTC20KJrjQKmSv5DXV0R/uks2ZXhqjNkqAw==}
-
-  '@next/font@13.1.6':
-    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
 
   '@next/swc-darwin-arm64@13.5.6':
     resolution: {integrity: sha512-5nvXMzKtZfvcu4BhtV0KH1oGv4XEW+B+jOfmBdpFI3C7FrB/MfujRpWYSBBO64+qbW8pkZiSyQv9eiwnn5VIQA==}
@@ -5984,8 +5978,6 @@ snapshots:
   '@next/eslint-plugin-next@13.1.6':
     dependencies:
       glob: 7.1.7
-
-  '@next/font@13.1.6': {}
 
   '@next/swc-darwin-arm64@13.5.6':
     optional: true
