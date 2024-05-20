@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import "../../styles/index.css";
 
 const Header = () => {
   // Navbar toggle
@@ -15,7 +16,7 @@ const Header = () => {
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 1) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -23,6 +24,9 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
+    return () => {
+      window.addEventListener("scroll", handleStickyNavbar)
+    }
   });
 
   // submenu handler
@@ -37,10 +41,10 @@ const Header = () => {
 
   return (
     <>
-      <header
+       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${
           sticky
-            ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+            ? "!fixed w-full z-[9999] shadow-sticky navbar-animation"
             : "absolute"
         }`}
       >
@@ -50,7 +54,7 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-5" : "py-8"
                 } `}
               >
                 <Image
