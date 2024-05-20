@@ -92,13 +92,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        {/* <link rel="icon" href="/images/favicon.ico" /> */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com 'unsafe-inline';"
-        />
-      </head>
       <body className="dark:bg-black">
         <Providers>
           <Header />
