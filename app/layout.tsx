@@ -6,9 +6,6 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import { Providers } from "./providers";
 
-export const dynamic = "force-static";
-export const revalidate = 60;
-
 export const metadata: Metadata = {
   title: {
     template: "%s | Byron Labs",
