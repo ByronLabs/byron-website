@@ -6,6 +6,9 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import { Providers } from "./providers";
 
+export const dynamic = "force-static";
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Byron Labs",
@@ -74,6 +77,12 @@ export const metadata: Metadata = {
     //   },
     // ],
   },
+  icons: [
+    {
+      rel: "icon",
+      url: "/images/favicon.ico",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -83,15 +92,21 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-        <body className="dark:bg-black">
-          <Providers>
-            <Header />
-            {children}
-            <Footer />
-            <ScrollToTop />
-          </Providers>
-        </body>
+      <head>
+        {/* <link rel="icon" href="/images/favicon.ico" /> */}
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com 'unsafe-inline';"
+        />
+      </head>
+      <body className="dark:bg-black">
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </Providers>
+      </body>
     </html>
   );
-};
-
+}
