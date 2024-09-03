@@ -6,15 +6,15 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Services";
 
 export default function Home() {
-  return (
-    <>
-      <ScrollUp />
-      <Hero />
-      <Features />
-      <Brands />
-      <AboutSectionOne />
-      {/*<Blog />*/}
-      <Contact />
-    </>
-  );
+    return (
+        <>
+            <ScrollUp />
+            <Hero />
+            <Features />
+            <Brands />
+            <AboutSectionOne />
+            {/*<Blog />*/}
+            <Contact />
+        </>
+    );
 }
