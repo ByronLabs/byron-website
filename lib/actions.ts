@@ -8,7 +8,7 @@ export async function sendContactEmailAction(prevState: unknown, formData: FormD
         platform: "Byron Labs",
     };
 
-    const response = await fetch("https://app.vysion.ai/api/email/send-contact-email", {
+    const response = await fetch("https://app-stage.vysion.ai/api/email/send-contact-email", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
