@@ -1,5 +1,5 @@
-Contact: mailto:info@alphasec.eu
-Expires: 2024-05-28T10:00:00.000Z
+Contact: mailto:info@byronlabs.io
+Expires: 2025-02-01T10:00:00.000Z
 Encryption: https://byronlabs.io/.well-known/pgp-key.txt
 Preferred-Languages: en, es
 Canonical: https://byronlabs.io/.well-known/security.txt
