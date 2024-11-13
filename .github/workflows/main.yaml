@@ -17,6 +17,7 @@ jobs:
       run: |
         npm install --legacy-peer-deps
         npm run build
+        npm run export
 
     - name: Prepare root directory
       run : |
